@@ -1,0 +1,127 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #0D7C66;
+}
+
+nav{
+    background-color: #D7C3F1;
+    color: black;
+    height: 3rem;
+    padding: 0px 4rem;
+    font-size: 1.5rem;
+}
+.gamecontainer{
+    background-color: #BDE8CA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  5rem;
+    padding: 2rem;
+}
+.container{
+    background-color: #41B3A2;
+    display: grid;
+    grid-template-columns: repeat(3,15vh);
+    grid-template-rows: repeat(3,15vh);
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    font-size: 3rem;
+}
+.box:hover{
+    background-color: #D7C3F1;
+    cursor: pointer;
+}
+.bl{
+    border-left: 0;
+}
+.bt{
+    border-top: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+.br{
+    border-right: 0;
+}
+.gameinfo{
+    margin: 0 2rem;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+}
+.info{
+    margin: 3rem;
+    font-size: 2rem;
+}
+button{
+    height: 30px;
+    width: 60px;
+    margin: 20px;
+    padding: 2px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #D7C3F1;
+}
+@media screen and (max-width: 1200px){
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width: 767px){
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .container{
+        grid-template-columns: repeat(3,10vh);
+        grid-template-rows: repeat(3,10vh);
+    
+    }
+    .gameinfo{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 580px){
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .container{
+        grid-template-columns: repeat(3,8vh);
+        grid-template-rows: repeat(3,8vh);
+    
+    }
+    .gameinfo{
+        margin-top: 50px;
+
+    }
+}
+@media screen and (max-width: 480px){
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .container{
+        grid-template-columns: repeat(3,6vh);
+        grid-template-rows: repeat(3,6vh);
+    
+    }
+    .spaninfo{
+        display: flex;
+        font-size: 1.5rem;
+    }
+    nav{
+        padding-top: 5px;
+        font-size: 1rem;
+    }
+    .gameinfo{
+        margin-top: 50px;
+        font-size:1rem;
+        margin-right: 10px;
+    }
+}
